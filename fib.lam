@@ -1,0 +1,20 @@
+// Y
+f: y = x: f(x(x)); f(y(y))
+
+// fib
+fib n: n(n, m: m(n, k: add(fib(m), fib(k))))
+
+// three
+z s: s(s(s(s(s(s(s(z)))))))
+
+
+// Syntax 
+//
+// basically a subset of python but without explicit lambda keyword and commas between variables
+//
+// var:     x
+// app:     f(x1, .., xn)
+// lam:     x1 .. xn: bdy
+// let:     x = e; k
+//
+// note that this means applying a lambda is not allowed
